@@ -1,6 +1,6 @@
 [package]
-name = "hello-world"
-description = "Add two numbers"
+name = "strings-and-lists"
+description = "Greet one or more people"
 authors.workspace = true
 edition.workspace = true
 homepage.workspace = true
@@ -13,7 +13,7 @@ version.workspace = true
 [package.metadata.wapm]
 namespace = "wasmer"  # Replace this with your WAPM username
 abi = "none"
-bindings = { wai-bindgen = "0.1.0", exports = "hello-world.wai" }
+bindings = { wai-bindgen = "0.1.0", exports = "strings-and-lists.wai" }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

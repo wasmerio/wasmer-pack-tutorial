@@ -1,0 +1,6 @@
+resource calculator {
+    static new: func(initial-value: float32) -> calculator
+    current-value: func() -> float32
+    add: func(value: float32)
+    multiply: func(value: float32)
+}

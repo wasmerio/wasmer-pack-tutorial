@@ -1,0 +1,5 @@
+/// Greet a person by name.
+greet: func(name: string) -> string
+
+/// Say hello to multiple people.
+greet-many: func(people: list<string>) -> string
