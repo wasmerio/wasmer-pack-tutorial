@@ -39,25 +39,21 @@ mod tests {
 
     #[test]
     fn check_add() {
-        let calulator = Calculator::new(5.0);
-        let num1 = 5;
-        let num2 = 10;
-        calulator.add(num1 as f32);
-        calulator.add(num2 as f32);
+        let calulator = Calculator::new(0.5);
+        calulator.add(1.0);
+        calulator.add(10.0);
         let result = calulator.current_value();
-        let answer = 5.0 + (num1 + num2) as f32;
+        let answer = 0.5 + (1.0 + 10.0);
         assert_eq!(result, answer, "The add function is not working properly");
     }
 
     #[test]
     fn check_multiply() {
         let calulator = Calculator::new(1.0);
-        let num1 = 3;
-        let num2 = 4;
-        calulator.multiply(num1 as f32);
-        calulator.multiply(num2 as f32);
+        calulator.multiply(3.0);
+        calulator.multiply(4.0);
         let result = calulator.current_value();
-        let answer = (num1 * num2) as f32;
+        let answer = 3.0 * 4.0;
         assert_eq!(
             result, answer,
             "The multiply function is not working properly"
@@ -67,12 +63,10 @@ mod tests {
     fn check_factorial() {
         let calulator = Calculator::new(1.0);
         let num = 6;
-        let mut answer = 1;
-        for i in 1..=num {
-            calulator.multiply(i as f32);
-            answer *= i;
-        }
-        let answer = answer as f32;
+
+        // Multiply till 6
+        (1..=num).for_each(|num| calulator.multiply(num as f32));
+        let answer = (1..=6).fold(1, |a, b| a * b) as f32;
         let result = calulator.current_value();
         assert_eq!(
             result, answer,

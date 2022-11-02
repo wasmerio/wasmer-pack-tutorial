@@ -36,17 +36,12 @@ mod tests {
     }
     #[test]
     fn greet_many_people() {
-        let people = ["Rudra", "Michael", "Syrus"]
-            .map(|person| person.to_string())
-            .to_vec();
-        let answer = match people.as_slice() {
-            [] => "Oh, nobody's there...".to_string(),
-            [person] => format!("Hello, {person}!"),
-            [people @ .., last] => {
-                let people = people.join(", ");
-                format!("Hello, {people}, and {last}!")
-            }
-        };
+        let people = vec![
+            "Rudra".to_string(),
+            "Michael".to_string(),
+            "Syrus".to_string(),
+        ];
+        let answer = "Hello, Rudra, Michael, and Syrus!".to_string();
         let result = StringsAndLists::greet_many(people);
         assert_eq!(answer, result);
     }
