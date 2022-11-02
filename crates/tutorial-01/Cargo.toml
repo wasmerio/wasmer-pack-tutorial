@@ -1,6 +1,6 @@
 [package]
 name = "wasmer-pack"
-description = "A code generator that lets you treat WebAssembly modules like native dependencies."
+description = "Add two numbers"
 authors.workspace = true
 edition.workspace = true
 homepage.workspace = true
@@ -10,7 +10,16 @@ repository.workspace = true
 rust-version.workspace = true
 version.workspace = true
 
+[package.metadata.wapm]
+namespace = "wasmer"  # Replace this with your WAPM username
+abi = "none"
+bindings = { wai-bindgen = "0.1.0", exports = "hello-world.wai" }
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+wai-bindgen-rust = "0.2.0-rc.1"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
 
