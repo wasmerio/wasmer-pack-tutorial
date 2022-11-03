@@ -35,6 +35,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "hello-world"
+version = "0.0.0"
+dependencies = [
+ "wai-bindgen-rust",
+]
+
+[[package]]
 name = "id-arena"
 version = "2.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -73,6 +80,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bbe448f377a7d6961e30f5955f9b8d106c3f5e449d493ee1b125c1d43c2b5179"
 dependencies = [
  "proc-macro2",
+]
+
+[[package]]
+name = "resources"
+version = "0.0.0"
+dependencies = [
+ "wai-bindgen-rust",
+]
+
+[[package]]
+name = "strings-and-lists"
+version = "0.0.0"
+dependencies = [
+ "wai-bindgen-rust",
 ]
 
 [[package]]
@@ -208,11 +229,4 @@ dependencies = [
  "pulldown-cmark",
  "unicode-normalization",
  "unicode-xid",
-]
-
-[[package]]
-name = "wasmer-pack"
-version = "0.0.0"
-dependencies = [
- "wai-bindgen-rust",
 ]
