@@ -1,6 +1,7 @@
 [package]
 name = "hello-world"
 description = "Add two numbers"
+version = "0.1.0"
 authors.workspace = true
 edition.workspace = true
 homepage.workspace = true
@@ -8,18 +9,17 @@ license.workspace = true
 readme.workspace = true
 repository.workspace = true
 rust-version.workspace = true
-version.workspace = true
+publish = false
 
 [package.metadata.wapm]
-namespace = "wasmer"  # Replace this with your WAPM username
+namespace = "wai"
 abi = "none"
-bindings = { wai-bindgen = "0.1.0", exports = "hello-world.wai" }
+bindings = { wai-bindgen = "0.2.0", exports = "hello-world.wai" }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-wai-bindgen-rust = "0.2.0-rc.1"
+wai-bindgen-rust = "0.2"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
-
