@@ -36,7 +36,7 @@ dependencies = [
 
 [[package]]
 name = "hello-world"
-version = "0.0.0"
+version = "0.1.0"
 dependencies = [
  "wai-bindgen-rust",
 ]
@@ -84,14 +84,14 @@ dependencies = [
 
 [[package]]
 name = "resources"
-version = "0.0.0"
+version = "0.1.0"
 dependencies = [
  "wai-bindgen-rust",
 ]
 
 [[package]]
 name = "strings-and-lists"
-version = "0.0.0"
+version = "0.1.0"
 dependencies = [
  "wai-bindgen-rust",
 ]
@@ -166,9 +166,9 @@ checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
 name = "wai-bindgen-gen-core"
-version = "0.2.0-rc.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e81fa2fd9f532fbdccf0a3c01488d1a8744502ef7cb87b3b48a6596767bd06a"
+checksum = "cd16a4dc5fb71faaa3d21530a1d004b7fc88f0bf70cda6f5c4099220254d947b"
 dependencies = [
  "anyhow",
  "wai-parser",
@@ -176,9 +176,9 @@ dependencies = [
 
 [[package]]
 name = "wai-bindgen-gen-rust"
-version = "0.2.0-rc.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c12d7b02857e7717d5500f85eb7d3616487cb5b315c487ee138c610139a93ebd"
+checksum = "17625f823712dd6eff5656b4308842b7aeac9eca429f6eea36443d4305cadf7d"
 dependencies = [
  "heck",
  "wai-bindgen-gen-core",
@@ -186,9 +186,9 @@ dependencies = [
 
 [[package]]
 name = "wai-bindgen-gen-rust-wasm"
-version = "0.2.0-rc.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f9a93f041d326eebb4f97ae1a5d806709066dfcadba58bd06cb5ce9cc90acaf0"
+checksum = "757fbff15d11d0578ee879cea209b111bd09f8b39346c7b212a7e7f52585d2f7"
 dependencies = [
  "heck",
  "wai-bindgen-gen-core",
@@ -197,9 +197,9 @@ dependencies = [
 
 [[package]]
 name = "wai-bindgen-rust"
-version = "0.2.0-rc.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0b07ba8d802f1164617eb3afa9720606d66979ab86e82079b6c498aa4974b4cc"
+checksum = "90e6c91f681f714599326252f4ae8b9897293110055d25c576fa09ffb01661cd"
 dependencies = [
  "async-trait",
  "bitflags",
@@ -208,9 +208,9 @@ dependencies = [
 
 [[package]]
 name = "wai-bindgen-rust-impl"
-version = "0.2.0-rc.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0e432fc7f4c1f0adfb078309abecccbe601552ba58c954d3483eba2212726b50"
+checksum = "eb36c407339837a5e1fcd9b41641fbe36488fc53ab0664add14d5f7105f6fbbb"
 dependencies = [
  "proc-macro2",
  "syn",
@@ -220,9 +220,9 @@ dependencies = [
 
 [[package]]
 name = "wai-parser"
-version = "0.2.0-rc.1"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "992bd0d199aab17ff74ce0c96e9ef7b6e3bca214a5a1663f09bb951762fe02ad"
+checksum = "2a24cfad91494925ba41c6a03bd7d092eb3c3cdbccf4ef680b06831030bd7a69"
 dependencies = [
  "anyhow",
  "id-arena",
