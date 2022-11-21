@@ -5,6 +5,9 @@ record point {
 }
 
 
+// If I don't use a record anywhere in this file, or is not returned by any resource. It won't be included in the generated cargo expand or expaned wai files.
+// It needs to be used by a function, or instance, or resource or anything to be included and mimics the same behavior as being garbage collected
+
 /// A line geometry to represent a line segment with starting and ending point
 record line-segment {
     start: point,
@@ -18,9 +21,15 @@ record circle {
 }
 
 /// Arbitary shape - represent a shape with n number of points using a list of points
-record shape {
-    points: list<point>
+record multi-line{
+    points: list<point>,
 }
 
 /// Calculate distance between two points
 distance-between: func(p1: point, p2: point) -> float32
+
+/// Calculate the area and perimeter of a Circle
+perimeter-of-circle: func(c: circle) -> float32
+area-of-circle: func(c: circle) -> float32
+multi-line-length: func(l: multi-line) -> float32
+
