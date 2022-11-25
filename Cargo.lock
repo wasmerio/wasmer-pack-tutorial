@@ -35,13 +35,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hello-world"
-version = "0.1.0"
-dependencies = [
- "wai-bindgen-rust",
-]
-
-[[package]]
 name = "id-arena"
 version = "2.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -83,20 +76,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "resources"
-version = "0.1.0"
-dependencies = [
- "wai-bindgen-rust",
-]
-
-[[package]]
-name = "strings-and-lists"
-version = "0.1.0"
-dependencies = [
- "wai-bindgen-rust",
-]
-
-[[package]]
 name = "syn"
 version = "1.0.103"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -121,6 +100,27 @@ name = "tinyvec_macros"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cda74da7e1a664f795bb1f8a87ec406fb89a02522cf6e50620d016add6dbbf5c"
+
+[[package]]
+name = "tutorial-01"
+version = "0.1.0"
+dependencies = [
+ "wai-bindgen-rust",
+]
+
+[[package]]
+name = "tutorial-02"
+version = "0.1.0"
+dependencies = [
+ "wai-bindgen-rust",
+]
+
+[[package]]
+name = "tutorial-05"
+version = "0.1.0"
+dependencies = [
+ "wai-bindgen-rust",
+]
 
 [[package]]
 name = "unicase"

@@ -1,5 +1,5 @@
 [package]
-name = "resources"
+name = "tutorial-05"
 description = "A basic calculator"
 version = "0.1.0"
 authors.workspace = true
