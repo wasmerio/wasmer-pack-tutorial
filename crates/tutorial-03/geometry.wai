@@ -1,0 +1,35 @@
+/// A point coordinate structure with { x, y }
+record point {
+    x: float32,
+    y: float32
+}
+
+
+// If I don't use a record anywhere in this file, or is not returned by any resource. It won't be included in the generated cargo expand or expaned wai files.
+// It needs to be used by a function, or instance, or resource or anything to be included and mimics the same behavior as being garbage collected
+
+/// A line geometry to represent a line segment with starting and ending point
+record line-segment {
+    start: point,
+    end: point
+}
+
+/// A structure to represent a circle with center point and a radius
+record circle {
+    center: point,
+    radius: float32
+}
+
+/// Arbitary shape - represent a shape with n number of points using a list of points
+record multi-line{
+    points: list<point>,
+}
+
+/// Calculate distance between two points
+distance-between: func(p1: point, p2: point) -> float32
+
+/// Calculate the area and perimeter of a Circle
+perimeter-of-circle: func(c: circle) -> float32
+area-of-circle: func(c: circle) -> float32
+multi-line-length: func(l: multi-line) -> float32
+

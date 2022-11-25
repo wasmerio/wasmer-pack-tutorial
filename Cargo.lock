@@ -116,6 +116,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "tutorial-03"
+version = "0.1.0"
+dependencies = [
+ "wai-bindgen-rust",
+]
+
+[[package]]
 name = "tutorial-05"
 version = "0.1.0"
 dependencies = [

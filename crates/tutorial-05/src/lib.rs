@@ -64,12 +64,14 @@ mod tests {
         let calulator = Calculator::new(1.0);
         let num = 6;
 
-        // Multiply till 6
-        (1..=num).for_each(|num| calulator.multiply(num as f32));
-        let answer = (1..=6).fold(1, |a, b| a * b) as f32;
+        for n in 1..=num {
+            calulator.multiply(n as f32);
+        }
+
+        let answer: i32 = (1..=6).product();
         let result = calulator.current_value();
         assert_eq!(
-            result, answer,
+            result, answer as f32,
             "The multiply function is not working properly"
         );
     }
