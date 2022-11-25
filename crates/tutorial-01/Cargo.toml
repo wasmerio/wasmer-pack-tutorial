@@ -1,5 +1,5 @@
 [package]
-name = "hello-world"
+name = "tutorial-01"
 description = "Add two numbers"
 version = "0.1.0"
 authors.workspace = true
@@ -14,7 +14,7 @@ publish = false
 [package.metadata.wapm]
 namespace = "wai"
 abi = "none"
-bindings = { wai-bindgen = "0.2.0", exports = "hello-world.wai" }
+bindings = { wai-version = "0.2.0", exports = "hello-world.wai" }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
