@@ -14,7 +14,7 @@ publish = false
 [package.metadata.wapm]
 namespace = "wai"
 abi = "none"
-bindings = { wai-bindgen = "0.2.0", exports = "hello-world.wai" }
+bindings = { wai-version = "0.2.0", exports = "hello-world.wai" }
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
